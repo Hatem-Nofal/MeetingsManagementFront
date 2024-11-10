@@ -24,6 +24,8 @@ import { AccountLayoutModule } from '@abp/ng.theme.lepton-x/account';
 
 import { AppService } from './FullCalendar/services/app.service';
 import { HomeModule } from './home/home.module';
+import * as moment from 'moment';
+import { MOMENT } from 'angular-calendar';
 
  @NgModule({
   imports: [
@@ -42,8 +44,9 @@ import { HomeModule } from './home/home.module';
   declarations: [	AppComponent
     ],
   providers: [
-    AppService ,
-     APP_ROUTE_PROVIDER,
+    { provide: MOMENT, useValue: moment },
+
+      APP_ROUTE_PROVIDER,
     provideAbpCore(
       withOptions({
         environment,

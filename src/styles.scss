@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 @keyframes donut-spin {
   0% {
     transform: rotate(0deg);
@@ -55,4 +60,31 @@
   width: 20px;
   height: 20px;
   background-image: url('/assets/images/getting-started/x.svg');
+}
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.align-center {
+  &.vertical:not(.horizontal) {
+      display: flex;
+      align-items: center;
+  }
+
+  &.horizontal:not(.vertical) {
+      text-align: center;
+  }
+
+  &:not(.vertical):not(.horizontal) {
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
 }

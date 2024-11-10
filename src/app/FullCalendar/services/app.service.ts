@@ -199,6 +199,6 @@ export class AppService {
             }
         ];
 
-        return new Promise(resolve => setTimeout(() => resolve(events), 3000));
+        return new Promise(resolve => setTimeout(() => resolve(events), 1));
     }
 }

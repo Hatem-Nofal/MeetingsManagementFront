@@ -2892,7 +2892,7 @@ angular-oauth2-oidc@^17.0.0:
   dependencies:
     tslib "^2.5.2"
 
-angular-resizable-element@^7.0.0:
+angular-resizable-element@^7.0.0, angular-resizable-element@^7.0.2:
   version "7.0.2"
   resolved "https://registry.npmjs.org/angular-resizable-element/-/angular-resizable-element-7.0.2.tgz"
   integrity sha512-/BGuNiA38n9klexHO1xgnsA3VYigj9v+jUGjKtBRgfB26bCxZKsNWParSu2k3EqbATrfAJC4Nl8f7cORpJFf4w==
@@ -3147,7 +3147,7 @@ bootstrap-icons@~1.8.0:
   resolved "https://registry.npmjs.org/bootstrap-icons/-/bootstrap-icons-1.8.3.tgz"
   integrity sha512-s5kmttnbq4BXbx3Bwnj39y+t7Vc3blTtyD77W3aYQ1LlNoS3lNbbGvSYhIbg26Im8KmjScyFpHEevlPOBcIDdA==
 
-bootstrap@^5.2.0:
+bootstrap@^5.2.0, bootstrap@^5.3.3:
   version "5.3.3"
   resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.3.tgz"
   integrity sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==
@@ -5844,7 +5844,14 @@ mkdirp@^1.0.3:
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-moment@^2.30.1:
+moment-timezone@^0.5.46:
+  version "0.5.46"
+  resolved "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.46.tgz"
+  integrity sha512-ZXm9b36esbe7OmdABqIWJuBBiLLwAjrN7CE+7sYdCCx82Nabt1wHDj8TVseS59QIlfFPbOoiBPm6ca9BioG4hw==
+  dependencies:
+    moment "^2.29.4"
+
+moment@^2.29.4, moment@^2.30.1:
   version "2.30.1"
   resolved "https://registry.npmjs.org/moment/-/moment-2.30.1.tgz"
   integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
